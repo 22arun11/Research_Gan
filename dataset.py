@@ -73,4 +73,5 @@ class Corpus(Dataset):
 
 def load(batch_size, seq_len):
     ds = Corpus(seq_len)
+    print(ds)
     return (DataLoader(ds, batch_size, shuffle=True), ds.vocab)

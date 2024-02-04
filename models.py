@@ -1,8 +1,7 @@
 import torch
 import torch.nn as nn
-
 class Autoencoder(nn.Module):
-    
+    print()
     def __init__(self, enc_hidden_dim, dec_hidden_dim, embedding_dim, 
                  latent_dim, vocab_size, dropout, seq_len):
         super().__init__()
